@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Duole Information Technology | Hong Kong Game Development
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-  <style>
-   @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duole Information Technology | Hong Kong Game Development</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
         
         :root {
             --primary: #4f46e5;
@@ -113,836 +110,606 @@
         body.show-chinese .chinese {
             display: block;
         }
-  </style>
- </head>
- <body>
-  <!-- Language Switcher -->
-  <div class="language-switcher">
-   <button class="language-btn" id="languageToggle">
-    EN/中文
-   </button>
-  </div>
-  <!-- Navigation -->
-  <nav class="bg-gray-900/80 backdrop-blur-md fixed w-full z-50 border-b border-gray-800">
-   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
-     <div class="flex items-center">
-      <div class="flex-shrink-0">
-       <span class="text-2xl font-bold text-white pixel-font">
-        DUOLE
-       </span>
-      </div>
-      <div class="hidden md:block">
-       <div class="ml-10 flex items-baseline space-x-4">
-        <a class="text-indigo-400 hover:text-indigo-300 px-3 py-2 rounded-md text-sm font-medium english" href="#home">
-         App
-        </a>
-        <a class="text-indigo-400 hover:text-indigo-300 px-3 py-2 rounded-md text-sm font-medium chinese" href="#home">
-         秒搭
-        </a>
-        <a class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium english" href="#games">
-         Our Games
-        </a>
-        <a class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium chinese" href="#games">
-         我们的游戏
-        </a>
-        <a class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium english" href="#about">
-         About Us
-        </a>
-        <a class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium chinese" href="#about">
-         关于我们
-        </a>
-        <a class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium english" href="#careers">
-         Careers
-        </a>
-        <a class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium chinese" href="#careers">
-         加入我们
-        </a>
-        <a class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium english" href="#contact">
-         Contact
-        </a>
-        <a class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium chinese" href="#contact">
-         联系我们
-        </a>
-       </div>
-      </div>
-     </div>
-     <div class="hidden md:block">
-      <div class="ml-4 flex items-center md:ml-6">
-       <a href="#contact">
-        <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300 english">
-         Join Our Community
-        </button>
-       </a>
-       <a href="#contact">
-        <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300 chinese">
-         加入社区
-        </button>
-       </a>
-      </div>
-     </div>
-     <div class="-mr-2 flex md:hidden">
-      <button aria-controls="mobile-menu" aria-expanded="false" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" type="button">
-       <span class="sr-only">
-        Open main menu
-       </span>
-       <svg aria-hidden="true" class="block h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-        </path>
-       </svg>
-      </button>
-     </div>
+    </style>
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="language-btn" id="languageToggle">EN/中文</button>
     </div>
-   </div>
-  </nav>
-  <!-- Hero Section -->
-  <section class="hero-gradient pt-32 pb-20 px-4 sm:px-6 lg:px-8" id="home">
-   <div class="max-w-7xl mx-auto">
-    <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-     <div class="px-4 sm:px-0 sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center">
-      <div>
-       <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl english">
-        <span class="block">
-         OOTD Fashion Outfit
-        </span>
-        <span class="block text-indigo-400">
-         AI Fashion Assistant
-        </span>
-       </h1>
-       <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl chinese">
-        <span class="block">
-         时尚穿搭推荐
-        </span>
-        <span class="block text-indigo-400">
-         时尚助手
-        </span>
-       </h1>
-       <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 english">
-        Hong Kong's leading AI fashion recommendation assistant creates personalized wardrobes and virtual dressing experiences.
-       </p>
-       <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 chinese">
-        香港领先的AI穿搭推荐助手，打造个性化衣橱及虚拟换装体验。
-       </p>
-       <div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-20">
-        <div class="flex flex-col sm:flex-row gap-3">
-         <a href="#contact">
-          <button class="bg-indigo-600 hover:bg-indigo-900 text-2xl white px-20 py-4 rounded-md text-xl font-medium transition duration-300 english">
-           Stay Tuned
-          </button>
-         </a>
-         <a href="#contact">
-          <button class="bg-indigo-600 hover:bg-indigo-900 text-2xl white px-20 py-4 rounded-md text-xl font-medium transition duration-300 chinese">
-           敬请期待
-          </button>
-         </a>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-900/80 backdrop-blur-md fixed w-full z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold text-white pixel-font">DUOLE</span>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#home" class="text-indigo-400 hover:text-indigo-300 px-3 py-2 rounded-md text-sm font-medium english">App</a>
+                            <a href="#home" class="text-indigo-400 hover:text-indigo-300 px-3 py-2 rounded-md text-sm font-medium chinese">秒搭</a>
+                            <a href="#games" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium english">Our Games</a>
+                            <a href="#games" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium chinese">我们的游戏</a>
+                            <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium english">About Us</a>
+                            <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium chinese">关于我们</a>
+                            <a href="#careers" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium english">Careers</a>
+                            <a href="#careers" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium chinese">加入我们</a>
+                            <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium english">Contact</a>
+                            <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium chinese">联系我们</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-4 flex items-center md:ml-6">
+                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300 english">
+                            Join Our Community
+                        </button>
+                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300 chinese">
+                            加入社区
+                        </button>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
-       </div>
-      </div>
-     </div>
-     <div class="mt-12 lg:mt-0 lg:col-span-6">
-      <div class="relative mx-auto w-full rounded-lg shadow-lg overflow-hidden floating">
-       <div class="absolute inset-0 bg-indigo-500 opacity-20 rounded-lg">
-       </div>
-       <img alt="Game characters in simulation" class="w-full object-cover rounded-lg pixel-border" src="https://github.com/Ben-1980/duoleootd/blob/main/miaoda_002_s.jpg?raw=true"/>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- Featured Games -->
-  <section class="py-20 bg-gray-900" id="games">
-   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center">
-     <h2 class="text-3xl font-extrabold text-white sm:text-4xl english">
-      Our
-      <span class="text-indigo-400">
-       Featured Games
-      </span>
-     </h2>
-     <h2 class="text-3xl font-extrabold text-white sm:text-4xl chinese">
-      <span class="text-indigo-400">
-       特色游戏
-      </span>
-      展示
-     </h2>
-     <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-300 sm:mt-4 english">
-      Experience our multi-platform game works that have received positive feedback from users
-     </p>
-     <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-300 sm:mt-4 chinese">
-      体验我们获得用户好评的多平台游戏作品
-     </p>
-    </div>
-    <div class="mt-16 grid gap-8 lg:grid-cols-3 md:grid-cols-2">
-     <!-- Game 1 -->
-     <div class="game-card glow-effect bg-gray-800 rounded-xl overflow-hidden">
-      <div class="relative h-64">
-       <img alt="Game cover" class="w-full h-full object-cover" src="https://res.17996cdn.net/vampire/images/lb/p1.png"/>
-       <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70">
-       </div>
-       <div class="absolute bottom-0 left-0 p-6">
-        <h3 class="text-2xl font-bold text-white english">
-         Immortal Diaries
-        </h3>
-        <h3 class="text-2xl font-bold text-white chinese">
-         永生日记
-        </h3>
-        <div class="flex mt-2">
-         <span class="bg-indigo-600 text-white text-xs px-2 py-1 rounded mr-2 english">
-          Simulation
-         </span>
-         <span class="bg-indigo-600 text-white text-xs px-2 py-1 rounded mr-2 chinese">
-          模拟
-         </span>
-         <span class="bg-amber-500 text-white text-xs px-2 py-1 rounded english">
-          Lover
-         </span>
-         <span class="bg-amber-500 text-white text-xs px-2 py-1 rounded chinese">
-          恋爱
-         </span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                <div class="px-4 sm:px-0 sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center">
+                    <div>
+                        <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl english">
+                            <span class="block">OOTD Fashion Outfit </span>
+                            <span class="block text-indigo-400">AI Fashion Assistant</span>
+                        </h1>
+                        <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl chinese">
+                            <span class="block">时尚穿搭推荐</span>
+                            <span class="block text-indigo-400">时尚助手</span>
+                        </h1>
+                        <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 english">
+                            Hong Kong's leading AI fashion recommendation assistant creates personalized wardrobes and virtual dressing experiences.
+                        </p>
+                        <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 chinese">
+                            香港领先的AI穿搭推荐助手，打造个性化衣橱及虚拟换装体验。
+                        </p>
+                         <div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-20">
+                           <div class="flex flex-col sm:flex-row gap-3">
+                        <button class="bg-indigo-600 hover:bg-indigo-900 text-2xl white px-20 py-4 rounded-md text-xl font-medium transition duration-300 english">
+                            Stay Tuned
+                        </button>
+                        <button class="bg-indigo-600 hover:bg-indigo-900 text-2xl white px-20 py-4 rounded-md text-xl font-medium transition duration-300 chinese">
+                            敬请期待
+                        </button>
+   
+                                </a>
+                                                             
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0 lg:col-span-6">
+                    <div class="relative mx-auto w-full rounded-lg shadow-lg overflow-hidden floating">
+                        <div class="absolute inset-0 bg-indigo-500 opacity-20 rounded-lg"></div>
+                        <img class="w-full object-cover rounded-lg pixel-border" src="https://github.com/Ben-1980/duoleootd/blob/main/miaoda_002_s.jpg?raw=true" alt="Game characters in simulation">
+                    </div>
+                </div>
+            </div>
         </div>
-       </div>
-      </div>
-      <div class="p-6">
-       <p class="text-gray-300 english">
-        Complete daily tasks to get promoted to Queen of the Vampires. Will you be ready to seize the throne when it's time?
-       </p>
-       <p class="text-gray-300 chinese">
-        完成日常任务晋升为吸血鬼女王。当时机到来时，你准备好夺取王位了吗？
-       </p>
-       <div class="mt-6 flex justify-between items-center">
-        <div class="flex space-x-2">
-         <span class="text-xs text-gray-400">
-          <i class="fas fa-gamepad mr-1">
-          </i>
-          <span class="english">
-           Mobile
-          </span>
-          <span class="chinese">
-           手机
-          </span>
-         </span>
+    </section>
+
+    <!-- Featured Games -->
+    <section id="games" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl english">
+                    Our <span class="text-indigo-400">Featured Games</span>
+                </h2>
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl chinese">
+                    <span class="text-indigo-400">特色游戏</span>展示
+                </h2>
+                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-300 sm:mt-4 english">
+                     Experience our multi-platform game works that have received positive feedback from users
+                </p>
+                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-300 sm:mt-4 chinese">
+                    体验我们获得用户好评的多平台游戏作品
+                </p>
+            </div>
+            
+            <div class="mt-16 grid gap-8 lg:grid-cols-3 md:grid-cols-2">
+                <!-- Game 1 -->
+                <div class="game-card glow-effect bg-gray-800 rounded-xl overflow-hidden">
+                    <div class="relative h-64">
+                        <img class="w-full h-full object-cover" src="https://res.17996cdn.net/vampire/images/lb/p1.png" alt="Game cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70"></div>
+                        <div class="absolute bottom-0 left-0 p-6">
+                            <h3 class="text-2xl font-bold text-white english">Immortal Diaries</h3>
+                            <h3 class="text-2xl font-bold text-white chinese">永生日记</h3>
+                            <div class="flex mt-2">
+                                <span class="bg-indigo-600 text-white text-xs px-2 py-1 rounded mr-2 english">Simulation</span>
+                                <span class="bg-indigo-600 text-white text-xs px-2 py-1 rounded mr-2 chinese">模拟</span>
+                                <span class="bg-amber-500 text-white text-xs px-2 py-1 rounded english">Lover</span>
+                                <span class="bg-amber-500 text-white text-xs px-2 py-1 rounded chinese">恋爱</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 english">Complete daily tasks to get promoted to Queen of the Vampires. Will you be ready to seize the throne when it's time?</p>
+                        <p class="text-gray-300 chinese">完成日常任务晋升为吸血鬼女王。当时机到来时，你准备好夺取王位了吗？</p>
+                        <div class="mt-6 flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <span class="text-xs text-gray-400"><i class="fas fa-gamepad mr-1"></i> <span class="english">Mobile</span><span class="chinese">手机</span></span>
+                            </div>
+                            <button onclick="window.location.href='https://vampire.17996.com/?fbclid=IwAR03F3LNVTFkCNvjoKv2I2Pz2cZHsS6LagMtEfoKMi5Tfjl-9934hlLUyDI'" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium english">
+                                Learn More <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                            <button onclick="window.location.href='https://vampire.17996.com/?fbclid=IwAR03F3LNVTFkCNvjoKv2I2Pz2cZHsS6LagMtEfoKMi5Tfjl-9934hlLUyDI'" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium chinese">
+                                了解更多 <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Game 2 -->
+                <div class="game-card glow-effect bg-gray-800 rounded-xl overflow-hidden">
+                    <div class="relative h-64">
+                        <img class="w-full h-full object-cover" src="https://github.com/Ben-1980/duoleootd/blob/main/R2_001_720.jpg?raw=true" alt="Game cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70"></div>
+                        <div class="absolute bottom-0 left-0 p-6">
+                            <h3 class="text-2xl font-bold text-white english">Victorian Clue Hunter</h3>
+                            <h3 class="text-2xl font-bold text-white chinese">维多利亚线索猎人</h3>
+                            <div class="flex mt-2">
+                                <span class="bg-green-600 text-white text-xs px-2 py-1 rounded mr-2 english">Simulation</span>
+                                <span class="bg-green-600 text-white text-xs px-2 py-1 rounded mr-2 chinese">模拟</span>
+                                <span class="bg-purple-600 text-white text-xs px-2 py-1 rounded english">Decrypt</span>
+                                <span class="bg-purple-600 text-white text-xs px-2 py-1 rounded chinese">解密</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 english">The project is dominated by 35+ female users. Pan-female game products that integrate plot, find objects, dress up, and build gameplay.</p>
+                        <p class="text-gray-300 chinese">该项目主要面向35岁以上女性用户。整合剧情、寻物、装扮和建造玩法的全女性向游戏产品。</p>
+                        <div class="mt-6 flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <span class="text-xs text-gray-400"><i class="fas fa-gamepad mr-1"></i> <span class="english">Mobile</span><span class="chinese">手机</span></span>
+                            </div>
+                             <button onclick="window.location.href='https://witch.oriwish.com'" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium english">
+                                 Learn More <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                            <button class="text-indigo-400 hover:text-indigo-300 text-sm font-medium chinese">
+                                了解更多 <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Game 3 -->
+                <div class="game-card glow-effect bg-gray-800 rounded-xl overflow-hidden">
+                    <div class="relative h-64">
+                        <img class="w-full h-full object-cover" src="https://ompic.neteaselab.com/respic/images/witch/20240411/images/gf3.webp" alt="Game cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70"></div>
+                        <div class="absolute bottom-0 left-0 p-6">
+                            <h3 class="text-2xl font-bold text-white english">Witch's Tale: Double Life</h3>
+                            <h3 class="text-2xl font-bold text-white chinese">女巫传说：双重人生</h3>
+                            <div class="flex mt-2">
+                                <span class="bg-red-600 text-white text-xs px-2 py-1 rounded mr-2 english">Simulation</span>
+                                <span class="bg-red-600 text-white text-xs px-2 py-1 rounded mr-2 chinese">模拟</span>
+                                <span class="bg-yellow-500 text-white text-xs px-2 py-1 rounded english">Lover</span>
+                                <span class="bg-yellow-500 text-white text-xs px-2 py-1 rounded chinese">恋爱</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-300 english">In the game, you can experience fashion and beauty, personal development, adventure exploration, and social offensive.</p>
+                        <p class="text-gray-300 chinese">在游戏中，你可以体验时尚美容、个人成长、冒险探索和社交互动。</p>
+                        <div class="mt-6 flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <span class="text-xs text-gray-400"><i class="fas fa-gamepad mr-1"></i> <span class="english">Mobile</span><span class="chinese">手机</span></span>
+                            </div>
+                            <button class="text-indigo-400 hover:text-indigo-300 text-sm font-medium english">
+                             <button onclick="window.location.href='https://witch.oriwish.com'" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium english">
+                                 Learn More <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                            <button class="text-indigo-400 hover:text-indigo-300 text-sm font-medium chinese">
+                                了解更多 <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                              </a>
+            </div>
         </div>
-        <button class="text-indigo-400 hover:text-indigo-300 text-sm font-medium english" onclick="window.location.href='https://vampire.17996.com/?fbclid=IwAR03F3LNVTFkCNvjoKv2I2Pz2cZHsS6LagMtEfoKMi5Tfjl-9934hlLUyDI'">
-         Learn More
-         <i class="fas fa-arrow-right ml-1">
-         </i>
-        </button>
-        <button class="text-indigo-400 hover:text-indigo-300 text-sm font-medium chinese" onclick="window.location.href='https://vampire.17996.com/?fbclid=IwAR03F3LNVTFkCNvjoKv2I2Pz2cZHsS6LagMtEfoKMi5Tfjl-9934hlLUyDI'">
-         了解更多
-         <i class="fas fa-arrow-right ml-1">
-         </i>
-        </button>
-       </div>
-      </div>
-     </div>
-     <!-- Game 2 -->
-     <div class="game-card glow-effect bg-gray-800 rounded-xl overflow-hidden">
-      <div class="relative h-64">
-       <img alt="Game cover" class="w-full h-full object-cover" src="https://github.com/Ben-1980/duoleootd/blob/main/R2_001_720.jpg?raw=true"/>
-       <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70">
-       </div>
-       <div class="absolute bottom-0 left-0 p-6">
-        <h3 class="text-2xl font-bold text-white english">
-         Victorian Clue Hunter
-        </h3>
-        <h3 class="text-2xl font-bold text-white chinese">
-         维多利亚线索猎人
-        </h3>
-        <div class="flex mt-2">
-         <span class="bg-green-600 text-white text-xs px-2 py-1 rounded mr-2 english">
-          Simulation
-         </span>
-         <span class="bg-green-600 text-white text-xs px-2 py-1 rounded mr-2 chinese">
-          模拟
-         </span>
-         <span class="bg-purple-600 text-white text-xs px-2 py-1 rounded english">
-          Decrypt
-         </span>
-         <span class="bg-purple-600 text-white text-xs px-2 py-1 rounded chinese">
-          解密
-         </span>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                <div class="lg:col-span-6">
+                    <div class="relative mx-auto w-full rounded-lg shadow-lg overflow-hidden">
+                        <img class="w-full object-cover rounded-lg" src="https://github.com/Ben-1980/duoleootd/blob/main/duole_002_s.jpg?raw=true" alt="Game development team">
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0 lg:col-span-6 lg:flex lg:items-center">
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-white sm:text-4xl english">
+                            About <span class="text-indigo-400">Duole</span>
+                        </h2>
+                        <h2 class="text-3xl font-extrabold text-white sm:text-4xl chinese">
+                            关于<span class="text-indigo-400">多樂</span>
+                        </h2>
+                        <p class="mt-3 text-lg text-gray-300 english">
+                            Founded in 2023, Duole is a game development company that specializes in mobile entertainment. Our diverse portfolio includes popular titles such as "Immortal Diaries", "Palace Rule", and "Victorian Clue Hunter". At Duole, we strive to push the boundaries of innovation and creativity to deliver female-oriented games that exceed expectations.
+                        </p>
+                        <p class="mt-3 text-lg text-gray-300 chinese">
+                            多樂信息技術有限公司成立于2023年，是一家专注于移动娱乐的游戏开发公司。我们拥有多样化的产品组合，包括《永生日记》、《宫廷法则》和《维多利亚线索猎人》等热门游戏。在多樂，我们致力于突破创新与创意的边界，提供超越期待的女性向游戏体验。
+                        </p>
+                        
+                        <div class="mt-8">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-indigo-500 rounded-md p-2">
+                                    <i class="fas fa-gamepad text-white"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-white english">Our Mission</h3>
+                                    <h3 class="text-lg font-medium text-white chinese">我们的使命</h3>
+                                    <p class="mt-1 text-gray-300 english">
+                                        In April 2024, Witch's Tale: Double Life will be officially launched on the European and American app stores and Google Play.
+                                    </p>
+                                    <p class="mt-1 text-gray-300 chinese">
+                                        2024年4月，《女巫传说：双重人生》将在欧美应用商店和Google Play正式上线。
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 flex items-start">
+                                <div class="flex-shrink-0 bg-indigo-500 rounded-md p-2">
+                                    <i class="fas fa-users text-white"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-white english">Our Team</h3>
+                                    <h3 class="text-lg font-medium text-white chinese">我们的团队</h3>
+                                    <p class="mt-1 text-gray-300 english">
+                                        We have 2 offices in Guangzhou and Hong Kong, a collective of talented individuals from all over the world, united by our love for games and creativity.
+                                    </p>
+                                    <p class="mt-1 text-gray-300 chinese">
+                                        我们在广州和香港设有2个办公室，汇聚了来自全球各地的优秀人才，因对游戏和创意的热爱而团结在一起。
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 flex items-start">
+                                <div class="flex-shrink-0 bg-indigo-500 rounded-md p-2">
+                                    <i class="fas fa-trophy text-white"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-white english">Our Achievements</h3>
+                                    <h3 class="text-lg font-medium text-white chinese">我们的成就</h3>
+                                    <p class="mt-1 text-gray-300 english">
+                                        In the field of female-oriented games, we will continue to contribute to game products that women love.
+                                    </p>
+                                    <p class="mt-1 text-gray-300 chinese">
+                                        在女性向游戏领域，我们将持续为女性玩家打造喜爱的游戏产品。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-       </div>
-      </div>
-      <div class="p-6">
-       <p class="text-gray-300 english">
-        The project is dominated by 35+ female users. Pan-female game products that integrate plot, find objects, dress up, and build gameplay.
-       </p>
-       <p class="text-gray-300 chinese">
-        该项目主要面向35岁以上女性用户。整合剧情、寻物、装扮和建造玩法的全女性向游戏产品。
-       </p>
-       <div class="mt-6 flex justify-between items-center">
-        <div class="flex space-x-2">
-         <span class="text-xs text-gray-400">
-          <i class="fas fa-gamepad mr-1">
-          </i>
-          <span class="english">
-           Mobile
-          </span>
-          <span class="chinese">
-           手机
-          </span>
-         </span>
+    </section>
+
+    <!-- Careers -->
+    <section id="careers" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl english">
+                    Join <span class="text-indigo-400">Our Team</span>
+                </h2>
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl chinese">
+                    加入<span class="text-indigo-400">我们的团队</span>
+                </h2>
+                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-300 sm:mt-4 english">
+                    We're always looking for passionate individuals to join our growing family
+                </p>
+                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-300 sm:mt-4 chinese">
+                    我们一直在寻找充满热情的人才加入我们不断壮大的大家庭
+                </p>
+            </div>
+            
+            <div class="mt-12 grid gap-6 lg:grid-cols-3 md:grid-cols-2">
+                <!-- Job 1 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg p-6 glow-effect">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                            <i class="fas fa-code text-white"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-white english">Gameplay Programmer</h3>
+                            <h3 class="text-lg font-medium text-white chinese">游戏程序员</h3>
+                            <p class="text-sm text-indigo-400 english">Full-time • Remote</p>
+                            <p class="text-sm text-indigo-400 chinese">全职 • 远程</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-300 english">
+                        Develop core game systems and mechanics for our upcoming AAA title using Unreal Engine 5.
+                    </p>
+                    <p class="mt-4 text-gray-300 chinese">
+                        使用虚幻引擎5为我们即将推出的AAA级游戏开发核心游戏系统和机制。
+                    </p>
+                    <div class="mt-6">
+                                              </a>
+                    </div>
+                </div>
+                
+                <!-- Job 2 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg p-6 glow-effect">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                            <i class="fas fa-paint-brush text-white"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-white english">Concept Artist</h3>
+                            <h3 class="text-lg font-medium text-white chinese">概念设计师</h3>
+                            <p class="text-sm text-indigo-400 english">Full-time • Remote</p>
+                            <p class="text-sm text-indigo-400 chinese">全职 • 远程</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-300 english">
+                        Create stunning concept art and visual development for characters, environments, and props.
+                    </p>
+                    <p class="mt-4 text-gray-300 chinese">
+                        为角色、环境和道具创作惊艳的概念艺术和视觉开发。
+                    </p>
+                    <div class="mt-6">
+                                               </a>
+                    </div>
+                </div>
+                                <!-- Job 3 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg p-6 glow-effect">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                            <i class="fas fa-headset text-white"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-white english">Game plot planning</h3>
+                            <h3 class="text-lg font-medium text-white chinese">游戏剧情策划</h3>
+                            <p class="text-sm text-indigo-400 english">Full&part-time • Hong Kong</p>
+                            <p class="text-sm text-indigo-400 chinese">全职&兼职 • 香港</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-300 english">
+                        Build and engage with our player communities across social media and gaming platforms.
+                    </p>
+                    <p class="mt-4 text-gray-300 chinese">
+                        在社交媒体和游戏平台上建立并参与我们的玩家社区。
+                    </p>
+                    <div class="mt-6">
+                                                </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-xl gray-300 english">
+                    Don't see your dream position? We'd still love to hear from you!
+                </p>
+                <p class="text-xl gray-300 chinese">
+                    没有看到你梦想的职位？我们仍然希望收到你的消息！
+                </p>
+           
+            </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-10 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                <div class="lg:col-span-6">
+                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl english">
+                        Get In <span class="text-indigo-400">Touch</span>
+                    </h2>
+                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl chinese">
+                        与我们<span class="text-indigo-400">联系</span>
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-300 english">
+                        Have a question or want to discuss a potential collaboration? Reach out to us!
+                    </p>
+                    <p class="mt-3 text-lg text-gray-300 chinese">
+                        有问题或想讨论潜在合作？联系我们！
+                    </p>
+                    
+                    <div class="mt-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-white english">Our Office</h3>
+                                <h3 class="text-lg font-medium text-white chinese">我们的办公室</h3>
+                                <p class="mt-1 text-gray-300 english">
+                                    Unit 501, No.382 Lockhart Road<br>
+                                    Wanchai, Hong Kong
+                                </p>
+                                <p class="mt-1 text-gray-300 chinese">
+                                    香港灣仔駱克道382號501室
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 flex items-start">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                                <i class="fas fa-phone-alt text-white"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-white english">Phone</h3>
+                                <h3 class="text-lg font-medium text-white chinese">电话</h3>
+                                <p class="mt-1 text-gray-300 english">
+                                    +852 6035 1777<br>
+                                    Attn: ZOUBIN
+                                </p>
+                                <p class="mt-1 text-gray-300 chinese">
+                                    電話：60351777<br>
+                                    收件人：ZOUBIN
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 flex items-start">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-white english">Email</h3>
+                                <h3 class="text-lg font-medium text-white chinese">电子邮件</h3>
+                                <p class="mt-1 text-gray-300 english">
+                                    00416@88.com<br>
+                                    For business inquiries: zb@zgdlgo.com
+                                </p>
+                                <p class="mt-1 text-gray-300 chinese">
+                                    00416@88.com<br>
+                                    商务合作：zb@zgdlgo.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-lg font-medium text-white english">Follow Us</h3>
+                        <h3 class="text-lg font-medium text-white chinese">关注我们</h3>
+                        <div class="mt-4 flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-indigo-400">
+                                <i class="fab fa-twitter fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-indigo-400">
+                                <i class="fab fa-facebook-f fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-indigo-400">
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-indigo-400">
+                                <i class="fab fa-linkedin-in fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-indigo-400">
+                                <i class="fab fa-youtube fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-indigo-400">
+                                <i class="fab fa-discord fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 lg:mt-0 lg:col-span-6">
+                    <div class="bg-gray-700 rounded-lg shadow-xl overflow-hidden p-6">
+                        <h3 class="text-lg font-medium text-white mb-6 english">Send Us a Message</h3>
+                         <h3 class="text-lg font-medium text-white mb-6 chinese">给我们留言</h3>
+                        <form>
+                             <div class="mt-12 lg:mt-0 lg:col-span-6">
+                                <div>
+                                  <h3 class="block text-sm font-medium text-gray-300 english">Your Name</h3>
+                                   <h3 class="block text-sm font-medium text-gray-300 chinese">您的姓名</h3>                                  
+                                    <input type="text" name="name" id="name" autocomplete="name" class="mt-1 block w-full bg-gray-800 border border-gray-600 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-300 english">Email Address</label>
+                                    <label for="email" class="block text-sm font-medium text-gray-300 chinese">您的邮箱地址</label>
+                                    <input type="email" name="email" id="email" autocomplete="email" class="mt-1 block w-full bg-gray-800 border border-gray-600 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="subject" class="block text-sm font-medium text-gray-300 english">Subject</label>
+                                    <label for="subject" class="block text-sm font-medium text-gray-300 chinese">类型</label>
+                                    <select id="subject" name="subject" class="mt-1 block w-full bg-gray-800 border border-gray-600 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                        <option class="english">General Inquiry</option>
+                                        <option class="chinese">一般咨询</option>
+                                        <option class="english">Business Partnership</option>
+                                        <option class="chinese">商业合作</option>
+                                        <option class="english">Press/Media</option>
+                                        <option class="chinese">媒体/新闻</option>
+                                        <option class="english">Career Opportunity</option>
+                                        <option class="chinese">职业机会</option>
+                                        <option class="english">Technical Support</option>
+                                        <option class="chinese">技术支持</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-300 english">Message</label>
+                                    <label for="message" class="block text-sm font-medium text-gray-300 chinese">留言</label>
+                                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full bg-gray-800 border border-gray-600 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                                </div>
+                                
+                                <div>
+                                      <div class="mt-6 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-20">
+                           <div class="flex flex-col sm:flex-row gap-6">
+                        <button class="bg-indigo-600 hover:bg-indigo-900 text-2xl white px-20 py-4 rounded-md text-xl font-medium transition duration-300 english">
+                             Send Message
+                        </button>
+                        <button class="bg-indigo-600 hover:bg-indigo-900 text-2xl white px-20 py-4 rounded-md text-xl font-medium transition duration-300 chinese">
+                            发送信息                    
+                                    </button>
+                                                                       </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <button class="text-indigo-400 hover:text-indigo-300 text-sm font-medium english">
-         Stay Tuned
-         <i class="fas fa-arrow-right ml-1">
-         </i>
-        </button>
-        <button class="text-indigo-400 hover:text-indigo-300 text-sm font-medium chinese">
-         了解更多
-         <i class="fas fa-arrow-right ml-1">
-         </i>
-        </button>
-       </div>
-      </div>
-     </div>
-     <!-- Game 3 -->
-     <div class="game-card glow-effect bg-gray-800 rounded-xl overflow-hidden">
-      <div class="relative h-64">
-       <img alt="Game cover" class="w-full h-full object-cover" src="https://ompic.neteaselab.com/respic/images/witch/20240411/images/gf3.webp"/>
-       <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70">
-       </div>
-       <div class="absolute bottom-0 left-0 p-6">
-        <h3 class="text-2xl font-bold text-white english">
-         Witch's Tale: Double Life
-        </h3>
-        <h3 class="text-2xl font-bold text-white chinese">
-         女巫传说：双重人生
-        </h3>
-        <div class="flex mt-2">
-         <span class="bg-red-600 text-white text-xs px-2 py-1 rounded mr-2 english">
-          Simulation
-         </span>
-         <span class="bg-red-600 text-white text-xs px-2 py-1 rounded mr-2 chinese">
-          模拟
-         </span>
-         <span class="bg-yellow-500 text-white text-xs px-2 py-1 rounded english">
-          Lover
-         </span>
-         <span class="bg-yellow-500 text-white text-xs px-2 py-1 rounded chinese">
-          恋爱
-         </span>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="xl:grid xl:grid-cols-1 xl:gap-8">
+                <div class="space-y-5 xl:col-span-1">
+                    <span class="text-1xl font-bold text-white pixel-font">DUOLE INFORMATION TECHNOLOGY (HK) CO., LIMITED</span>
+                    <p class="text-gray-300 text-base english">
+                        Creating unforgettable gaming experiences from the heart of Hong Kong.
+                    </p>
+                    <p class="text-gray-300 text-base chinese">
+                        在香港核心地带创造难忘的游戏体验。
+                    </p>
+
+                        <div>
+                                                             </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-800 pt-8">
+                <p class="text-base text-gray-400 text-center english">
+                    &copy; 2023 Duole Information Technology (HK) Co., Limited. All rights reserved.
+                </p>
+                <p class="text-base text-gray-400 text-center chinese">
+                    &copy; 2023 多樂信息技術(香港)有限公司。保留所有权利。
+                </p>
+            </div>
         </div>
-       </div>
-      </div>
-      <div class="p-6">
-       <p class="text-gray-300 english">
-        In the game, you can experience fashion and beauty, personal development, adventure exploration, and social offensive.
-       </p>
-       <p class="text-gray-300 chinese">
-        在游戏中，你可以体验时尚美容、个人成长、冒险探索和社交互动。
-       </p>
-       <div class="mt-6 flex justify-between items-center">
-        <div class="flex space-x-2">
-         <span class="text-xs text-gray-400">
-          <i class="fas fa-gamepad mr-1">
-          </i>
-          <span class="english">
-           Mobile
-          </span>
-          <span class="chinese">
-           手机
-          </span>
-         </span>
-        </div>
-        <button class="text-indigo-400 hover:text-indigo-300 text-sm font-medium english" onclick="window.location.href='https://witch.oriwish.com'">
-         Learn More
-         <i class="fas fa-arrow-right ml
-         </i>
-        </button>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="mt-12 text-center">
-    </div>
-   </div>
-  </section>
-  <!-- About Us -->
-  <section class="py-20 bg-gray-800" id="about">
-   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-     <div class="lg:col-span-6">
-      <div class="relative mx-auto w-full rounded-lg shadow-lg overflow-hidden">
-       <img alt="Game development team" class="w-full object-cover rounded-lg" src="https://github.com/Ben-1980/duoleootd/blob/main/duole_002_s.jpg?raw=true"/>
-      </div>
-     </div>
-     <div class="mt-12 lg:mt-0 lg:col-span-6 lg:flex lg:items-center">
-      <div>
-       <h2 class="text-3xl font-extrabold text-white sm:text-4xl english">
-        About
-        <span class="text-indigo-400">
-         Duole
-        </span>
-       </h2>
-       <h2 class="text-3xl font-extrabold text-white sm:text-4xl chinese">
-        关于
-        <span class="text-indigo-400">
-         多樂
-        </span>
-       </h2>
-       <p class="mt-3 text-lg text-gray-300 english">
-        Founded in 2023, Duole is a game development company that specializes in mobile entertainment. Our diverse portfolio includes popular titles such as "Immortal Diaries", "Palace Rule", and "Victorian Clue Hunter". At Duole, we strive to push the boundaries of innovation and creativity to deliver female-oriented games that exceed expectations.
-       </p>
-       <p class="mt-3 text-lg text-gray-300 chinese">
-        多樂信息技術有限公司成立于2023年，是一家专注于移动娱乐的游戏开发公司。我们拥有多样化的产品组合，包括《永生日记》、《宫廷法则》和《维多利亚线索猎人》等热门游戏。在多樂，我们致力于突破创新与创意的边界，提供超越期待的女性向游戏体验。
-       </p>
-       <div class="mt-8">
-        <div class="flex items-start">
-         <div class="flex-shrink-0 bg-indigo-500 rounded-md p-2">
-          <i class="fas fa-gamepad text-white">
-          </i>
-         </div>
-         <div class="ml-4">
-          <h3 class="text-lg font-medium text-white english">
-           Our Mission
-          </h3>
-          <h3 class="text-lg font-medium text-white chinese">
-           我们的使命
-          </h3>
-          <p class="mt-1 text-gray-300 english">
-           In April 2024, Witch's Tale: Double Life will be officially launched on the European and American app stores and Google Play.
-          </p>
-          <p class="mt-1 text-gray-300 chinese">
-           2024年4月，《女巫传说：双重人生》将在欧美应用商店和Google Play正式上线。
-          </p>
-         </div>
-        </div>
-        <div class="mt-6 flex items-start">
-         <div class="flex-shrink-0 bg-indigo-500 rounded-md p-2">
-          <i class="fas fa-users text-white">
-          </i>
-         </div>
-         <div class="ml-4">
-          <h3 class="text-lg font-medium text-white english">
-           Our Team
-          </h3>
-          <h3 class="text-lg font-medium text-white chinese">
-           我们的团队
-          </h3>
-          <p class="mt-1 text-gray-300 english">
-           We have 2 offices in Guangzhou and Hong Kong, a collective of talented individuals from all over the world, united by our love for games and creativity.
-          </p>
-          <p class="mt-1 text-gray-300 chinese">
-           我们在广州和香港设有2个办公室，汇聚了来自全球各地的优秀人才，因对游戏和创意的热爱而团结在一起。
-          </p>
-         </div>
-        </div>
-        <div class="mt-6 flex items-start">
-         <div class="flex-shrink-0 bg-indigo-500 rounded-md p-2">
-          <i class="fas fa-trophy text-white">
-          </i>
-         </div>
-         <div class="ml-4">
-          <h3 class="text-lg font-medium text-white english">
-           Our Achievements
-          </h3>
-          <h3 class="text-lg font-medium text-white chinese">
-           我们的成就
-          </h3>
-          <p class="mt-1 text-gray-300 english">
-           In the field of female-oriented games, we will continue to contribute to game products that women love.
-          </p>
-          <p class="mt-1 text-gray-300 chinese">
-           在女性向游戏领域，我们将持续为女性玩家打造喜爱的游戏产品。
-          </p>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- Careers -->
-  <section class="py-20 bg-gray-900" id="careers">
-   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center">
-     <h2 class="text-3xl font-extrabold text-white sm:text-4xl english">
-      Join
-      <span class="text-indigo-400">
-       Our Team
-      </span>
-     </h2>
-     <h2 class="text-3xl font-extrabold text-white sm:text-4xl chinese">
-      加入
-      <span class="text-indigo-400">
-       我们的团队
-      </span>
-     </h2>
-     <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-300 sm:mt-4 english">
-      We're always looking for passionate individuals to join our growing family
-     </p>
-     <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-300 sm:mt-4 chinese">
-      我们一直在寻找充满热情的人才加入我们不断壮大的大家庭
-     </p>
-    </div>
-    <div class="mt-12 grid gap-6 lg:grid-cols-3 md:grid-cols-2">
-     <!-- Job 1 -->
-     <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg p-6 glow-effect">
-      <div class="flex items-center">
-       <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
-        <i class="fas fa-code text-white">
-        </i>
-       </div>
-       <div class="ml-4">
-        <h3 class="text-lg font-medium text-white english">
-         Gameplay Programmer
-        </h3>
-        <h3 class="text-lg font-medium text-white chinese">
-         游戏程序员
-        </h3>
-        <p class="text-sm text-indigo-400 english">
-         Full-time • Remote
-        </p>
-        <p class="text-sm text-indigo-400 chinese">
-         全职 • 远程
-        </p>
-       </div>
-      </div>
-      <p class="mt-4 text-gray-300 english">
-       Develop core game systems and mechanics for our upcoming AAA title using Unreal Engine 5.
-      </p>
-      <p class="mt-4 text-gray-300 chinese">
-       使用虚幻引擎5为我们即将推出的AAA级游戏开发核心游戏系统和机制。
-      </p>
-      <div class="mt-6">
-      </div>
-     </div>
-     <!-- Job 2 -->
-     <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg p-6 glow-effect">
-      <div class="flex items-center">
-       <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
-        <i class="fas fa-paint-brush text-white">
-        </i>
-       </div>
-       <div class="ml-4">
-        <h3 class="text-lg font-medium text-white english">
-         Concept Artist
-        </h3>
-        <h3 class="text-lg font-medium text-white chinese">
-         概念设计师
-        </h3>
-        <p class="text-sm text-indigo-400 english">
-         Full-time • Remote
-        </p>
-        <p class="text-sm text-indigo-400 chinese">
-         全职 • 远程
-        </p>
-       </div>
-      </div>
-      <p class="mt-4 text-gray-300 english">
-       Create stunning concept art and visual development for characters, environments, and props.
-      </p>
-      <p class="mt-4 text-gray-300 chinese">
-       为角色、环境和道具创作惊艳的概念艺术和视觉开发。
-      </p>
-      <div class="mt-6">
-      </div>
-     </div>
-     <!-- Job 3 -->
-     <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg p-6 glow-effect">
-      <div class="flex items-center">
-       <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
-        <i class="fas fa-headset text-white">
-        </i>
-       </div>
-       <div class="ml-4">
-        <h3 class="text-lg font-medium text-white english">
-         Game plot planning
-        </h3>
-        <h3 class="text-lg font-medium text-white chinese">
-         游戏剧情策划
-        </h3>
-        <p class="text-sm text-indigo-400 english">
-         Full&amp;part-time • Hong Kong
-        </p>
-        <p class="text-sm text-indigo-400 chinese">
-         全职&amp;兼职 • 香港
-        </p>
-       </div>
-      </div>
-      <p class="mt-4 text-gray-300 english">
-       Build and engage with our player communities across social media and gaming platforms.
-      </p>
-      <p class="mt-4 text-gray-300 chinese">
-       在社交媒体和游戏平台上建立并参与我们的玩家社区。
-      </p>
-      <div class="mt-6">
-      </div>
-     </div>
-    </div>
-    <div class="mt-12 text-center">
-     <p class="text-xl gray-300 english">
-      Don't see your dream position? We'd still love to hear from you!
-     </p>
-     <p class="text-xl gray-300 chinese">
-      没有看到你梦想的职位？我们仍然希望收到你的消息！
-     </p>
-    </div>
-   </div>
-  </section>
-  <!-- Contact -->
-  <section class="py-10 bg-gray-800" id="contact">
-   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-     <div class="lg:col-span-6">
-      <h2 class="text-3xl font-extrabold text-white sm:text-4xl english">
-       Get In
-       <span class="text-indigo-400">
-        Touch
-       </span>
-      </h2>
-      <h2 class="text-3xl font-extrabold text-white sm:text-4xl chinese">
-       与我们
-       <span class="text-indigo-400">
-        联系
-       </span>
-      </h2>
-      <p class="mt-4 text-lg text-gray-300 english">
-       Have a question or want to discuss a potential collaboration? Reach out to us!
-      </p>
-      <p class="mt-3 text-lg text-gray-300 chinese">
-       有问题或想讨论潜在合作？联系我们！
-      </p>
-      <div class="mt-8">
-       <div class="flex items-start">
-        <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
-         <i class="fas fa-map-marker-alt text-white">
-         </i>
-        </div>
-        <div class="ml-4">
-         <h3 class="text-lg font-medium text-white english">
-          Our Office
-         </h3>
-         <h3 class="text-lg font-medium text-white chinese">
-          我们的办公室
-         </h3>
-         <p class="mt-1 text-gray-300 english">
-          Unit 501, No.382 Lockhart Road
-          <br/>
-          Wanchai, Hong Kong
-         </p>
-         <p class="mt-1 text-gray-300 chinese">
-          香港灣仔駱克道382號501室
-         </p>
-        </div>
-       </div>
-       <div class="mt-6 flex items-start">
-        <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
-         <i class="fas fa-phone-alt text-white">
-         </i>
-        </div>
-        <div class="ml-4">
-         <h3 class="text-lg font-medium text-white english">
-          Phone
-         </h3>
-         <h3 class="text-lg font-medium text-white chinese">
-          电话
-         </h3>
-         <p class="mt-1 text-gray-300 english">
-          +852 6035 1777
-          <br/>
-          Attn: ZOUBIN
-         </p>
-         <p class="mt-1 text-gray-300 chinese">
-          電話：60351777
-          <br/>
-          收件人：ZOUBIN
-         </p>
-        </div>
-       </div>
-       <div class="mt-6 flex items-start">
-        <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
-         <i class="fas fa-envelope text-white">
-         </i>
-        </div>
-        <div class="ml-4">
-         <h3 class="text-lg font-medium text-white english">
-          Email
-         </h3>
-         <h3 class="text-lg font-medium text-white chinese">
-          电子邮件
-         </h3>
-         <p class="mt-1 text-gray-300 english">
-          00416@88.com
-          <br/>
-          For business inquiries: zb@zgdlgo.com
-         </p>
-         <p class="mt-1 text-gray-300 chinese">
-          00416@88.com
-          <br/>
-          商务合作：zb@zgdlgo.com
-         </p>
-        </div>
-       </div>
-      </div>
-      <div class="mt-8">
-       <h3 class="text-lg font-medium text-white english">
-        Follow Us
-       </h3>
-       <h3 class="text-lg font-medium text-white chinese">
-        关注我们
-       </h3>
-       <div class="mt-4 flex space-x-4">
-        <a class="text-gray-400 hover:text-indigo-400" href="#">
-         <i class="fab fa-twitter fa-lg">
-         </i>
-        </a>
-        <a class="text-gray-400 hover:text-indigo-400" href="#">
-         <i class="fab fa-facebook-f fa-lg">
-         </i>
-        </a>
-        <a class="text-gray-400 hover:text-indigo-400" href="#">
-         <i class="fab fa-instagram fa-lg">
-         </i>
-        </a>
-        <a class="text-gray-400 hover:text-indigo-400" href="#">
-         <i class="fab fa-linkedin-in fa-lg">
-         </i>
-        </a>
-        <a class="text-gray-400 hover:text-indigo-400" href="#">
-         <i class="fab fa-youtube fa-lg">
-         </i>
-        </a>
-        <a class="text-gray-400 hover:text-indigo-400" href="#">
-         <i class="fab fa-discord fa-lg">
-         </i>
-        </a>
-       </div>
-      </div>
-     </div>
-     <div class="mt-12 lg:mt-0 lg:col-span-6">
-      <div class="bg-gray-700 rounded-lg shadow-xl overflow-hidden p-6">
-       <h3 class="text-lg font-medium text-white mb-6 english">
-        Send Us a Message
-       </h3>
-       <h3 class="text-lg font-medium text-white mb-6 chinese">
-        给我们留言
-       </h3>
-       <form>
-        <div class="mt-12 lg:mt-0 lg:col-span-6">
-         <div>
-          <h3 class="block text-sm font-medium text-gray-300 english">
-           Your Name
-          </h3>
-          <h3 class="block text-sm font-medium text-gray-300 chinese">
-           您的姓名
-          </h3>
-          <input autocomplete="name" class="mt-1 block w-full bg-gray-800 border border-gray-600 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" id="name" name="name" type="text"/>
-         </div>
-         <div>
-          <label class="block text-sm font-medium text-gray-300 english" for="email">
-           Email Address
-          </label>
-          <label class="block text-sm font-medium text-gray-300 chinese" for="email">
-           您的邮箱地址
-          </label>
-          <input autocomplete="email" class="mt-1 block w-full bg-gray-800 border border-gray-600 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" id="email" name="email" type="email"/>
-         </div>
-         <div>
-          <label class="block text-sm font-medium text-gray-300 english" for="subject">
-           Subject
-          </label>
-          <label class="block text-sm font-medium text-gray-300 chinese" for="subject">
-           类型
-          </label>
-          <select class="mt-1 block w-full bg-gray-800 border border-gray-600 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" id="subject" name="subject">
-           <option class="english">
-            General Inquiry
-           </option>
-           <option class="chinese">
-            一般咨询
-           </option>
-           <option class="english">
-            Business Partnership
-           </option>
-           <option class="chinese">
-            商业合作
-           </option>
-           <option class="english">
-            Press/Media
-           </option>
-           <option class="chinese">
-            媒体/新闻
-           </option>
-           <option class="english">
-            Career Opportunity
-           </option>
-           <option class="chinese">
-            职业机会
-           </option>
-           <option class="english">
-            Technical Support
-           </option>
-           <option class="chinese">
-            技术支持
-           </option>
-          </select>
-         </div>
-         <div>
-          <label class="block text-sm font-medium text-gray-300 english" for="message">
-           Message
-          </label>
-          <label class="block text-sm font-medium text-gray-300 chinese" for="message">
-           留言
-          </label>
-          <textarea class="mt-1 block w-full bg-gray-800 border border-gray-600 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" id="message" name="message" rows="4"></textarea>
-         </div>
-         <div>
-          <div class="mt-6 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-20">
-           <div class="flex flex-col sm:flex-row gap-6">
-            <a href="#contact">
-             <button class="bg-indigo-600 hover:bg-indigo-900 text-2xl white px-20 py-4 rounded-md text-xl font-medium transition duration-300 english">
-              Send Message
-             </button>
-            </a>
-            <a href="#contact">
-             <button class="bg-indigo-600 hover:bg-indigo-900 text-2xl white px-20 py-4 rounded-md text-xl font-medium transition duration-300 chinese">
-              发送信息
-             </button>
-            </a>
-           </div>
-          </div>
-         </div>
-        </div>
-       </form>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- Footer -->
-  <footer class="bg-gray-900">
-   <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-    <div class="xl:grid xl:grid-cols-1 xl:gap-8">
-     <div class="space-y-5 xl:col-span-1">
-      <span class="text-1xl font-bold text-white pixel-font">
-       DUOLE INFORMATION TECHNOLOGY (HK) CO., LIMITED
-      </span>
-      <p class="text-gray-300 text-base english">
-       Creating unforgettable gaming experiences from the heart of Hong Kong.
-      </p>
-      <p class="text-gray-300 text-base chinese">
-       在香港核心地带创造难忘的游戏体验。
-      </p>
-      <div>
-      </div>
-     </div>
-    </div>
-   </div>
-   <div class="mt-12 border-t border-gray-800 pt-8">
-    <p class="text-base text-gray-400 text-center english">
-     © 2023 Duole Information Technology (HK) Co., Limited. All rights reserved.
-    </p>
-    <p class="text-base text-gray-400 text-center chinese">
-     © 2023 多樂信息技術(香港)有限公司。保留所有权利。
-    </p>
-   </div>
-  </footer>
-  <script>
-   // Language toggle functionality
+    </footer>
+
+    <script>
+        // Language toggle functionality
         document.getElementById('languageToggle').addEventListener('click', function() {
             document.body.classList.toggle('show-chinese');
             
@@ -1003,7 +770,6 @@
                 observer.observe(card);
             });
         });
-  </script>
- </body>
+    </script>
+</body>
 </html>
-             
